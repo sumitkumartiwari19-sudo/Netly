@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="cache_apk" path="." />
+    <external-cache-path name="external_cache_apk" path="." />
+    <external-files-path name="external_files_apk" path="." />
+    <files-path name="internal_files" path="." />
+</paths>
