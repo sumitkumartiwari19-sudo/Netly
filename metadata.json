@@ -1,0 +1,6 @@
+{
+  "name": "Netly",
+  "description": "Fast and simple video and media downloader for downloading supported online content on Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #eef1f6;
+    color: #4a5568;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #1a202c;
+  }
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Clean Minimalism Neumorphism Dual Shadow Classes */
+.neu-up, .neu-flat {
+  background: #eef1f6;
+  box-shadow: 8px 8px 16px #c6cdd9, -8px -8px 16px #ffffff;
+  border-radius: 24px;
+}
+
+.neu-flat-sm {
+  background: #eef1f6;
+  box-shadow: 5px 5px 12px #c6cdd9, -5px -5px 12px #ffffff;
+  border-radius: 18px;
+}
+
+.neu-flat-lg {
+  background: #eef1f6;
+  box-shadow: 12px 12px 28px #c6cdd9, -12px -12px 28px #ffffff;
+  border-radius: 28px;
+}
+
+.neu-down, .neu-pressed {
+  background: #eef1f6;
+  box-shadow: inset 6px 6px 12px #c6cdd9, inset -6px -6px 12px #ffffff;
+  border-radius: 18px;
+}
+
+.neu-pressed-deep {
+  background: #eef1f6;
+  box-shadow: inset 6px 6px 14px #bec6d4, inset -6px -6px 14px #ffffff;
+}
+
+.neu-interactive {
+  background: #eef1f6;
+  box-shadow: 6px 6px 14px #c6cdd9, -6px -6px 14px #ffffff;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-interactive:hover {
+  box-shadow: 9px 9px 20px #b8c1d1, -9px -9px 20px #ffffff;
+  transform: translateY(-2px);
+}
+
+.neu-interactive:active {
+  box-shadow: inset 4px 4px 8px #c6cdd9, inset -4px -4px 8px #ffffff;
+  transform: translateY(0);
+}
+
+/* Gradient Buttons & Text */
+.btn-grad, .neu-accent-btn {
+  background: linear-gradient(135deg, #6c63ff 0%, #a78bfa 100%);
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 6px 6px 16px rgba(108, 99, 255, 0.32), -6px -6px 16px #ffffff;
+  transition: all 0.25s ease;
+}
+
+.btn-grad:hover, .neu-accent-btn:hover {
+  box-shadow: 8px 8px 22px rgba(108, 99, 255, 0.42), -8px -8px 22px #ffffff;
+  filter: brightness(1.04);
+  transform: translateY(-2px);
+}
+
+.btn-grad:active, .neu-accent-btn:active {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  transform: translateY(0);
+}
+
+.text-grad, .text-gradient {
+  background: linear-gradient(135deg, #6c63ff 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Floating Action Button */
+.neu-floating-fab, .fab {
+  background: linear-gradient(135deg, #6c63ff 0%, #a78bfa 100%);
+  box-shadow: 0 10px 24px rgba(108, 99, 255, 0.35), 6px 6px 20px rgba(108, 99, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.neu-floating-fab:hover, .fab:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(108, 99, 255, 0.45);
+}
+
+.neu-floating-fab:active, .fab:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Stat Item Divider */
+.stat-border-r {
+  border-right: 1px solid #d1d9e6;
+}
+
+/* Custom Scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #a78bfa #eef1f6;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #eef1f6;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px #c6cdd9, inset -2px -2px 5px #ffffff;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6c63ff, #a78bfa);
+  border-radius: 10px;
+}
+
+/* Phone Screen Glow Pulse */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 14px rgba(108, 99, 255, 0);
+  }
+}
+
+.pulse-glow {
+  animation: softPulse 3s infinite ease-in-out;
+}
+

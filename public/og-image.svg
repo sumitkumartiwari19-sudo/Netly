@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef1f6" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="950" cy="150" r="220" fill="#6c63ff" opacity="0.08" />
+  <circle cx="200" cy="500" r="180" fill="#a78bfa" opacity="0.1" />
+  
+  <g transform="translate(120, 140)">
+    <!-- Brand Icon -->
+    <rect width="90" height="90" rx="24" fill="url(#brand)" />
+    <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(18, 18)">
+      <path d="M27 12v26" />
+      <path d="M14 26l13 13 13-13" />
+      <path d="M10 46h34" />
+    </g>
+    
+    <!-- Brand Name -->
+    <text x="115" y="62" font-family="Poppins, sans-serif" font-size="44" font-weight="800" fill="#2d3748">
+      Net<tspan fill="#6c63ff">ly</tspan> Downloader
+    </text>
+    
+    <!-- Tagline -->
+    <text x="0" y="170" font-family="Poppins, sans-serif" font-size="52" font-weight="800" fill="#1a202c">
+      Fast Video &amp; Media Downloader
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="235" font-family="Inter, sans-serif" font-size="24" font-weight="500" fill="#5a6578">
+      Download HD &amp; 4K videos, reels, and audio from 1000+ social platforms.
+    </text>
+    <text x="0" y="275" font-family="Inter, sans-serif" font-size="22" font-weight="500" fill="#6c63ff">
+      100% Free · No Watermark · Android APK
+    </text>
+  </g>
+</svg>
